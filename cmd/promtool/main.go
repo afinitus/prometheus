@@ -324,7 +324,7 @@ func main() {
 	promQLLabelsDeleteQuery := promQLLabelsDeleteCmd.Arg("query", "PromQL query.").Required().String()
 	promQLLabelsDeleteName := promQLLabelsDeleteCmd.Arg("name", "Name of the label to delete.").Required().String()
 
-	featureList := app.Flag("enable-feature", "Comma separated feature names to enable. Valid options: promql-experimental-functions, promql-delayed-name-removal, promql-unquoted-utf8-names. See https://prometheus.io/docs/prometheus/latest/feature_flags/ for more details").Default("").Strings()
+	featureList := app.Flag("enable-feature", "Comma separated feature names to enable. Valid options: promql-experimental-functions, promql-delayed-name-removal, promql-unquoted-utf8-names, promql-binop-fill-modifiers. See https://prometheus.io/docs/prometheus/latest/feature_flags/ for more details").Default("").Strings()
 
 	documentationCmd := app.Command("write-documentation", "Generate command line documentation. Internal use.").Hidden()
 
