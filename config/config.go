@@ -1248,7 +1248,7 @@ func (t *TracingClientType) UnmarshalYAML(unmarshal func(any) error) error {
 	}
 
 	if *t != TracingClientHTTP && *t != TracingClientGRPC {
-		return fmt.Errorf("expected tracing client type to be to be %s or %s, but got %s",
+		return fmt.Errorf("expected tracing client type to be %s or %s, but got %s",
 			TracingClientHTTP, TracingClientGRPC, *t,
 		)
 	}
