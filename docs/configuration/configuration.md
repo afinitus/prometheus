@@ -2866,7 +2866,7 @@ server: <string>
 [ client_id: <string> ]
 
 # The time to wait between polling update requests.
-[ refresh_interval: <duration> | default = 30s ]
+[ refresh_interval: <duration> | default = 15s ]
 
 # The time after which the monitoring assignments are refreshed.
 [ fetch_timeout: <duration> | default = 2m ]
