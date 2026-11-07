@@ -105,7 +105,7 @@ convenience.
 ### Console templates
 
 Consoles are exposed on `/consoles/`, and sourced from the directory pointed to
-by the `-web.console.templates` flag.
+by the `--web.console.templates` flag.
 
 Console templates are rendered with
 [html/template](https://golang.org/pkg/html/template/), which provides
@@ -120,7 +120,7 @@ prefix. The globally configured external labels are available as
 
 Consoles also have access to all the templates defined with `{{define
 "templateName"}}...{{end}}` found in `*.lib` files in the directory pointed to
-by the `-web.console.libraries` flag. As this is a shared namespace, take care
+by the `--web.console.libraries` flag. As this is a shared namespace, take care
 to avoid clashes with other users. Template names beginning with `prom`,
 `_prom`, and `__` are reserved for use by Prometheus, as are the functions
 listed above.
